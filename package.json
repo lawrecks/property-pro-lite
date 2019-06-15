@@ -1,0 +1,24 @@
+{
+  "name": "property-pro-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawrecks/property-pro-lite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawrecks/property-pro-lite/issues"
+  },
+  "homepage": "https://github.com/lawrecks/property-pro-lite#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "1.18.2"
+  }
+}
