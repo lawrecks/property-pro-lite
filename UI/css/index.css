@@ -1,0 +1,244 @@
+@font-face{
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-family: Raleway;
+}
+@font-face{
+    src: url(../fonts/Berlin-Sans-FB-Regular.ttf);
+    font-family: Berlin-sans;
+}
+@font-face{
+    src: url(../fonts/OpenSans-Semibold.ttf);
+    font-family: Open-sans-semibold;
+}
+body{
+    margin: 0;
+    font-family: Berlin-sans;
+    background: #edeae5;
+}
+a{
+    text-decoration: none;
+}
+.banner{
+    background-image: url(../img/home_pic.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    min-height: 488px;
+    zoom:0.6;
+}
+.main-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+.welcome-phrase h1{
+    text-align: right;
+    color: #000;
+    line-height: 1.6em;
+    font-weight: normal;
+    font-size: 28px;
+}
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+.banner-button{
+    margin-top: 70px;
+    font-family: Berlin-sans;;
+    color: #000;
+    line-height: 1.4em;
+    background: linear-gradient(to right, #f4b56a, #fdf598);
+    outline: none;
+    box-shadow: 0 7px 21px #d2d2d2;
+    border: none;
+    border-radius: 30px;
+    width:80px;
+    width: 29%;
+    height: 50px;
+    font-size: 30px;
+}
+.welcome-phrase a:hover{
+    text-decoration: none;
+}
+.banner-button:hover{
+    box-shadow: 3px 11px 28px #b6b6b6;
+    cursor: pointer;
+}
+.banner-button:active{
+    box-shadow: 3px 11px 28px #b6b6b6;
+    transform: translateY(3px);
+    border: none;
+}
+.banner-button:focus{
+    outline: none;
+}
+.welcome-phrase{
+    padding-top: 100px;
+    width: 60%;
+    margin:auto;
+}
+.my-nav{
+    display: flex;
+    padding: 0 15px;
+    background:linear-gradient(to right, #024e55, #6ea394);
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 60px;
+}
+.nav-header{
+    flex: 4;
+    padding: 2px 0;
+    font-size: 40px;
+    color: #fff;
+}
+.nav-header img{
+    width: 42px;
+}
+.nav-header a{
+    color: #fff;
+}
+.nav-header a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-sub{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.nav-item{
+    padding: 20px 0;
+    width: 80px;
+    text-align: center;
+}
+.nav-item:hover{
+    background:linear-gradient(to bottom, #fce181, #fef9c7);
+}
+.nav-sub a{
+    color: #000;
+}
+.nav-sub a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.active{
+    background: linear-gradient(to right, #fce181, #fef9c7);
+}
+main{
+    /* font-family: Raleway; */
+    margin-top: 200px;
+    background: #fff;
+    padding: 20px 0;
+}
+.info-image img{
+    margin: 20px;
+}
+.container{
+    display:flex;
+    width: 70%;
+    margin: auto;
+}
+main h1, .container h3{
+    font-weight:400;
+    color: #000;
+}
+.container-item{
+    flex: 1;
+}
+.my-footer{
+    background: linear-gradient(to right, #024e55, #3c806c);
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.my-footer p{
+    margin: 5px;
+}
+.icon{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .icon{
+        display:block;
+        font-size: 33px;
+        position: relative;
+        left: 10px;
+        top: 7px;
+    }
+    .icon a{
+        color:white;
+    }
+    .nav-item{
+        display: none;
+    }
+    .nav-sub.responsive{
+        display: block;
+        position: relative;
+        top: 57px;
+        left: 40px;
+        background: linear-gradient(to right, #447a6b, #6ea394);;
+        height: 165px;
+    }
+    .nav-sub.responsive .nav-item{
+        display: block; 
+    }
+    .icon.responsive{
+        transform: rotate(-90deg);
+    }
+    .nav-header{
+        font-size: 22px;
+    }
+    .banner h1{
+        text-align: center;
+        background: rgba(255,255,255,0.8);
+    }
+    .banner{
+        zoom: 0.5;
+    }
+    .welcome-phrase{
+        padding-top: 63px;
+        width: 100%;
+    }
+    .welcome-phrase h1{
+        text-align: center;
+    }
+    .main-bg{
+        opacity: 0.6;
+    }
+    .get-started{
+        text-align: center;
+    }
+    .banner-button{
+        margin-top: 95px;
+        margin-right: 9px;
+        width: 63%;
+    }
+    .container{
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:350px){
+    .nav-header{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .banner-button{
+        width: 63%;
+    }
+}
