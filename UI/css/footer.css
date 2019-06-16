@@ -1,0 +1,12 @@
+.my-footer{
+  background: linear-gradient(to right, #024e55, #3c806c);
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.my-footer p{
+  margin: 5px;
+}

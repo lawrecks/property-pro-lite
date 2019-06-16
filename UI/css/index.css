@@ -1,14 +1,8 @@
-@font-face{
-    src: url(../fonts/Raleway-Medium.ttf);
-    font-family: Raleway;
-}
+@import url('nav.css');
+@import url('footer.css');
 @font-face{
     src: url(../fonts/Berlin-Sans-FB-Regular.ttf);
     font-family: Berlin-sans;
-}
-@font-face{
-    src: url(../fonts/OpenSans-Semibold.ttf);
-    font-family: Open-sans-semibold;
 }
 body{
     margin: 0;
@@ -82,55 +76,6 @@ a{
     width: 60%;
     margin:auto;
 }
-.my-nav{
-    display: flex;
-    padding: 0 15px;
-    background:linear-gradient(to right, #024e55, #6ea394);
-    position: fixed;
-    right: 0;
-    left: 0;
-    height: 60px;
-}
-.nav-header{
-    flex: 4;
-    padding: 2px 0;
-    font-size: 40px;
-    color: #fff;
-}
-.nav-header img{
-    width: 42px;
-}
-.nav-header a{
-    color: #fff;
-}
-.nav-header a:hover{
-    color: #fff;
-    text-decoration: none;
-}
-.nav-sub{
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-}
-.nav-item{
-    padding: 20px 0;
-    width: 80px;
-    text-align: center;
-}
-.nav-item:hover{
-    background:linear-gradient(to bottom, #fce181, #fef9c7);
-}
-.nav-sub a{
-    color: #000;
-}
-.nav-sub a:hover{
-    color: #000;
-    text-decoration: none;
-}
-.active{
-    background: linear-gradient(to right, #fce181, #fef9c7);
-}
 main{
     /* font-family: Raleway; */
     margin-top: 200px;
@@ -151,18 +96,6 @@ main h1, .container h3{
 }
 .container-item{
     flex: 1;
-}
-.my-footer{
-    background: linear-gradient(to right, #024e55, #3c806c);
-    color: #fff;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-.my-footer p{
-    margin: 5px;
 }
 .icon{
     display: none;
@@ -189,9 +122,11 @@ main h1, .container h3{
         left: 40px;
         background: linear-gradient(to right, #447a6b, #6ea394);;
         height: 165px;
+        flex:0;
     }
     .nav-sub.responsive .nav-item{
         display: block; 
+        min-width: 73px;
     }
     .icon.responsive{
         transform: rotate(-90deg);
@@ -235,6 +170,12 @@ main h1, .container h3{
     .nav-header{
         font-size: 18px;
     }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px){
+    .nav-header{
+      font-size:30px;
+    } 
 }
 
 @media screen and (max-width:1000px){
