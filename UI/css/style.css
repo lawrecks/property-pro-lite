@@ -97,7 +97,7 @@ input.form-control:focus {
   line-height: 1.4em;
   color: #000;
   outline: none;
-  box-shadow: 0 7px 21px #d2d2d2;
+  box-shadow: 0 0 8px #d2d2d2;
   border: none;
   font-size: 30px;
 }
