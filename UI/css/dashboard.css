@@ -1,0 +1,110 @@
+@import url('sidebar.css');
+@import url('nav1.css');
+@import url('modal.css');
+@font-face{
+    src: url(../fonts/Berlin-Sans-FB-Regular.ttf);
+    font-family: Berlin-sans;
+}
+body{
+    margin: 0;
+    font-family: Berlin-sans;
+    background: #edeae5;
+}
+a{
+    text-decoration: none;
+}
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
+main{
+    margin-left: 17%;
+    transition: margin-left 0.7s;
+    font-family: Berlin-sans;
+}
+.dash-content{
+    padding-top: 80px;
+}
+main h1, main h2{
+    font-weight: 400;
+}
+.menu-check{
+    width: 50%;
+    margin: 59px auto 0;
+    background: linear-gradient(to right,#dedede,#f0f0f0);
+    padding: 3%;
+    border-radius: 6px;
+    box-shadow: -1px 1px 6px #bfbfbf;
+}
+.menu-check > div a{
+    color: #3d3d3d;
+    font-size:20px;
+}
+.menu-check > div a:hover{
+    color: #181818;
+    font-size:20px;
+    text-decoration: underline;
+}
+.create-post{
+    margin-top: 70px;
+    font-family: Berlin-sans;
+    color: #000;
+    line-height: 1.4em;
+    background: linear-gradient(to right, #f4b56a, #fdf598);
+    outline: none;
+    box-shadow: 0 7px 21px #d2d2d2;
+    border: none;
+    border-radius: 30px;
+    width: 64%;
+    height: 50px;
+    font-size: 30px;
+}
+.create-post:hover{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    cursor: pointer;
+}
+.create-post:active{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    transform: translateY(3px);
+    border: none;
+}
+.create-post:focus{
+    outline: none;
+}
+
+@media screen and (max-width:1022px){
+
+    main{
+        margin-left:0px;
+    }
+    .create-post{
+        width: 74%;
+    }
+}
+
+@media screen and (max-width:760px) and (min-width:680px){
+    .create-post{
+        width: 84%;
+    }
+}
+
+@media screen and (max-width:680px) and (min-width:546px){
+    .menu-check{
+        width:70%;
+    }
+}
+@media screen and (max-width:546px) and (min-width:411px){
+    .menu-check{
+        width:90%;
+    }
+}
+@media screen and (max-width:411px){
+    .menu-check{
+        width:90%;
+    }
+    .create-post{
+        width: 100%;
+    }
+}
