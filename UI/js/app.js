@@ -63,3 +63,47 @@ const openLogOutModal = () => {
     }
   };
 };
+
+const openNewPostModal = () => {
+  let modal = document.getElementById("new_post_modal");
+  let close_button = document.getElementsByClassName("close")[1];
+  let cancel_button = document.getElementById("cancel_post");
+  let view_posts = document.getElementById("view_posts");
+  let desc = document.getElementById("desc").value;
+  let location = document.getElementById("location").value;
+  let price = document.getElementById("price").value;
+  let post_item = document.getElementById("post_item");
+  let selected_item = post_item.options[post_item.selectedIndex].text;
+  let new_image = document.getElementById("my_image").files[0].name;
+  if (
+    location == "" ||
+    desc == "" ||
+    price == "" ||
+    selected_item == "Select..." ||
+    new_image == ""
+  ) {
+    // console.log(desc,price,selected_item,location);
+    return;
+  }
+  modal.style.display = "block";
+  close_button.onclick = () => {
+    modal.style.display = "none";
+  };
+  cancel_button.onclick = () => {
+    modal.style.display = "none";
+  };
+  view_posts.onclick = () => {
+    modal.style.display = "none";
+  };
+  window.onclick = event => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+};
+
+const changeName = () => {
+  let new_image = document.getElementById("my_image").files[0].name;
+  let upload_button = document.getElementById("upBtn");
+  upload_button.innerHTML = new_image;
+};

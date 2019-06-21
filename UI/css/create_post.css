@@ -1,0 +1,136 @@
+@import url('sidebar.css');
+@import url('nav1.css');
+@import url('modal.css');
+@font-face{
+    src: url(../fonts/Berlin-Sans-FB-Regular.ttf);
+    font-family: Berlin-sans;
+}
+body{
+    margin: 0;
+    font-family: Berlin-sans;
+    background: #edeae5;
+}
+a{
+    text-decoration: none;
+}
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
+main{
+    margin-left: 17%;
+    transition: margin-left 0.7s;
+    font-family: Berlin-sans;
+}
+main h1, main h2{
+    font-weight: 400;
+}
+.create-post-form{
+    width: 67%;
+    margin:50px auto;
+}
+.main-content{
+    margin-top: 74px;
+}
+label{
+    font-size: 26px;
+}
+.form-group{
+    padding: 3px;
+}
+input.form-control{
+    border-radius: 0;
+    height: 42px;
+    font-family: Berlin-sans;
+    width: 98%;
+    display: block;
+    padding: 6px;
+    margin: 10px 6px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #ffffff;
+    border: 1px solid #8db7bb;
+}
+input.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #000;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem #8db7bb;
+}
+select.form-control{
+    border-radius: 0;
+    height: 42px;
+    font-family: Berlin-sans;
+    width: 55%;
+    display: block;
+    padding: 3px 6px;
+    margin: 10px auto;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #8db7bb;
+}
+.form-button{
+    width:100%;
+    padding:6px;
+    font-family: Berlin-sans;
+    background: linear-gradient(to right, #f4b56a, #fdf598);
+    line-height: 1.4em;
+    color: #000;
+    outline: none;
+    box-shadow: 0 7px 21px #d2d2d2;
+    border: none;
+    font-size: 30px;
+}
+.form-button:hover{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    cursor: pointer;
+}
+.form-button:active{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    transform: translateY(3px);
+    border: none;
+}
+.form-button:focus{
+    outline: none;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn {
+    border: 2px solid #022024;
+    color: #022024;
+    background-color: #edeae5;
+    padding: 11px 20px;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  .btn:active{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    transform: translateY(3px);
+    border: none;
+}
+  
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1022px){
+    main{
+        margin-left:0;
+    }
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="css/create_post.css">
+    <link rel="icon" href="img/logo1.png">
+</head>
+<body>
+    <aside class="sidebar" id="side-b">
+        <div class="sidebar-top">
+            <a href=""><i><img src="img/logo.png" alt=""></i></a>
+            <h3>Property Pro Lite</h3>
+        </div>
+        <div class="sidebar-main">
+            <div class="user-info">
+                <div><img src="img/profile_pic.png" alt=""></div>
+                <div>
+                    <h3>Lawrecks <sup><span class="online">•</span></sup></h2>
+                </div>
+            </div>
+            <a href="dashboard.html">
+                <div class="sidebar-item">
+                    <h4>Dashboard</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="sidebar-item active">
+                    <h4>New Post</h4>
+                </div>
+            </a>
+            <a href="manage_posts.html">
+                <div class="sidebar-item">
+                    <h4>My Adverts</h4>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-item">
+                    <h4>View Properties For Sale</h4>
+                </div>
+            </a>
+            <a href="">
+                <div class="sidebar-item">
+                    <h4>Edit Profile</h4>
+                </div>
+            </a>
+        </div>
+
+    </aside>
+    <main id="main-div">
+        <div class="dash-nav" id="navbar">
+            <div class="icon" id="my_icon"><a href="javascript:void(0);"
+                onclick="hideSideBar()">
+                <span>&#9776;</span></a>
+            </div>
+            <div class="icon" id="my_icon1"><a href="javascript:void(0);"
+                onclick="hideSideBarMobile()">
+                <span>&#9776;</span></a>
+            </div>
+            <div class="align-right">
+                <a href="javascript:void(0);" data-toggle="tooltip" title="Log out" onclick="openLogOutModal()">
+                    <span class="power">&#x23FB;</span>
+                </a>
+            </div>
+        </div>
+       <div class=main-content>
+            <h1 class="align-center">Post A New Advert</h2>
+            <div class="align-center menu-check">
+                <form action="javascript:void(0);">
+                    <div  class="create-post-form">
+                        <div class="form-group">
+                            <label for="location">Property Location</label><br>
+                            <input required type="text" id="location" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="desc">Property Description</label><br>
+                            <input required type="text" id="desc" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="post_item">Property Category</label>
+                            <select required type="text" id="post_item" class="form-control">
+                                <option value="">Select...</option>
+                                <option value="">2 bedroom</option>
+                                <option value="">3 bedroom</option>
+                                <option value="">4 bedroom</option>
+                                <option value="">Mini flat</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <input required type="number" id="price" class="form-control"
+                             placeholder="(&#8358;)">
+                        </div>
+                        <div class="form-group">
+                            <div class="upload-btn-wrapper">
+                                <button class="btn" id="upBtn">Upload image</button>
+                                <input required type="file" name="my_image" id="my_image" 
+                                class="form-control" onchange="changeName()"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" onclick="openNewPostModal()" 
+                            class="form-control form-button">POST ADVERT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+       </div>
+       <!-- logout modal -->
+       <div id="logout_modal" class="modal">
+            <div class="modal-content align-center">
+                <span class="close">&times;</span>
+                <h3>Are you sure you want to log out?</h3>
+                <button id="cancel_logout" class="cancel-button">Cancel</button>
+                <a href="index.html"><button id="do_logout" class="accept-btn">Log out</button></a>
+            </div>
+        </div>
+       <!-- new post modal -->
+       <div id="new_post_modal" class="modal">
+            <div class="modal-content align-center">
+                <span class="close">&times;</span>
+                <h3>Posted Succesfully! You can view it now</h3>
+                <button id="cancel_post" class="cancel-button">Cancel</button>
+                <a href="manage_posts.html"><button id="view_posts" class="accept-btn">View Posts</button></a>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
