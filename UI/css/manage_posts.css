@@ -1,0 +1,250 @@
+@import url('sidebar.css');
+@import url('nav1.css');
+@import url('modal.css');
+@font-face{
+    src: url(../fonts/Berlin-Sans-FB-Regular.ttf);
+    font-family: Berlin-sans;
+}
+body{
+    margin: 0;
+    font-family: Berlin-sans;
+    background: #edeae5;
+}
+a{
+    text-decoration: none;
+}
+.align-center{
+    text-align: center;
+}
+.align-right{
+    text-align: right;
+}
+main{
+    margin-left: 17%;
+    transition: margin-left 0.7s;
+    font-family: Berlin-sans;
+}
+main h1, main h2{
+    font-weight: 400;
+}
+.main-content{
+    margin-top: 74px;
+}
+.edit-post-form{
+    width: 67%;
+    margin:auto;
+}
+.form-group{
+    padding: 3px;
+}
+input.form-control{
+    border-radius: 0;
+    height: 42px;
+    font-family: Berlin-sans;
+    width: 98%;
+    display: block;
+    padding: 6px;
+    margin: 3px 6px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #ffffff;
+    border: 1px solid #8db7bb;
+}
+input.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #000;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem #8db7bb;
+}
+select.form-control{
+    border-radius: 0;
+    height: 42px;
+    font-family: Berlin-sans;
+    width: 55%;
+    display: block;
+    padding: 3px 6px;
+    margin: 10px auto;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #8db7bb;
+}
+.form-button{
+    width:100%;
+    padding:6px;
+    font-family: Berlin-sans;
+    background: linear-gradient(to right, #f4b56a, #fdf598);
+    line-height: 1.4em;
+    color: #000;
+    outline: none;
+    box-shadow: 0 7px 21px #d2d2d2;
+    border: none;
+    font-size: 30px;
+}
+.form-button:hover{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    cursor: pointer;
+}
+.form-button:active{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    transform: translateY(3px);
+    border: none;
+}
+.form-button:focus{
+    outline: none;
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn {
+    border: 2px solid #022024;
+    color: #022024;
+    background-color: #edeae5;
+    padding: 11px 20px;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  .btn:active{
+    box-shadow: 3px 11px 28px #d2d2d2;
+    transform: translateY(3px);
+    border: none;
+}
+  
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.posts{
+    width: 94%;
+    margin:50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post-item{
+    display: flex;
+    width: 47%;
+    margin: 5px;
+    padding: 7px;
+    background: linear-gradient(to right,#dedede,#f0f0f0);
+    box-shadow: -1px 1px 6px #bfbfbf;
+    cursor: pointer;
+}
+.post-item img{
+    width: 219px;
+    height: 203px;
+    padding-right: 15px;
+}
+.post-item h4{
+    font-weight: normal;
+}
+div {
+    display: block;
+}
+.edit-button{
+    padding: 5px 7px;
+    font-family: Berlin-sans;
+    background: linear-gradient(to right, #f4b56a, #fdf598);
+    line-height: 1.4em;
+    color: #000;
+    outline: none;
+    box-shadow: 0 3px 13px #d2d2d2;
+    border: none;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.delete-post{
+    width: 17%;
+    padding: 6px;
+    font-family: Berlin-sans;
+    background: #7e1313;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+.delete-button{
+    padding: 5px 7px;
+    font-family: Berlin-sans;
+    background: #7e1313;
+    line-height: 1.4em;
+    color: #fff ;
+    outline: none;
+    box-shadow: 0 3px 13px #d2d2d2;
+    border: none;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.mark-button{
+    padding: 5px;
+    font-family: Berlin-sans;
+    background: #022024;
+    line-height: 1.4em;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 3px 13px #d2d2d2;
+    border: none;
+    font-size: 20px;
+}
+.delete-button:hover, .edit-button:hover,
+ .cancel-button:hover, .delete-post:hover, .mark-button:hover{
+    box-shadow: 3px 7px 19px #8a8989;
+    cursor: pointer;
+}
+.search-field input{
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 44%;
+    text-align: center;
+    font-family: Berlin-sans;
+    height: 22px;
+}
+
+
+@media screen and (max-width:1022px){
+    main{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:851px){
+    .post-item{
+        width:75%;
+        margin: 8px auto;
+    }
+}
+@media screen and (max-width:801px){
+    .post-item{
+        width:100%;
+        margin: 8px auto;
+    }
+    main{
+        padding:7%;
+        margin: 0;
+    }
+    #delete-button{
+        width:35%;
+    }
+}
+@media screen and (max-width:530px){
+    .post-item{
+        display: block;
+    }
+    .search-field input{
+        font-size: 13px;
+    }
+
+}
