@@ -1,0 +1,45 @@
+@font-face{
+  src:url('../fonts/Unicode_IEC_symbol.ttf');
+  font-family: 'power symbols';
+}
+.dash-nav{
+  background: linear-gradient(to right,#fff, #fbfcf0);
+  height:43px;
+  display: flex;
+  padding: 10px;
+  position: fixed;
+  top:0;
+  right: 0;
+  left:17%;
+  transition: left 0.7s;
+}
+.dash-nav > div{
+  flex: 1;
+}
+#my_icon a,#my_icon1 a{
+  color:#959595;
+  font-size: 28px;
+}
+#my_icon1{
+  display: none;
+}
+.power{
+  font-family: 'power symbols';
+  font-size: 28px;
+  color: #767676;
+}
+
+@media screen and (max-width:1022px){
+  .dash-nav{
+    left:0px;
+  }
+  #my_icon1{
+    display: block;
+    position: relative;
+    left:0;
+    transition: left 0.7s;
+  }
+  #my_icon{
+    display: none;
+  }
+}

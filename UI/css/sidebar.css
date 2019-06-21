@@ -1,0 +1,86 @@
+.sidebar{
+  background: linear-gradient(to bottom, #013b41, #033035);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  width:17%;
+  transition: width 0.7s;
+  color: #fff;
+  font-family: Berlin-sans;
+  overflow: auto;
+  z-index: 1;
+}
+.sidebar-top{
+  display: flex;
+  background: #022024;
+}
+.user-info{
+  display:flex;
+  padding: 15% 1%;
+}
+.user-info > div{
+  padding: 1%;
+}
+.user-info > div:last-child{
+  flex: 1;
+}
+.user-info h3{
+  margin: 10px 0;
+  font-weight:normal;
+  padding: 1% 3%;
+}
+.user-info img{
+  width: 60px;
+  border-radius: 32px;
+}
+.sidebar-top h3{
+  font-weight:normal;
+}
+.sidebar-top img{
+  padding: 5px;
+  width: 50px;
+}
+.sidebar-item h4{
+  font-weight: 400;
+  margin: 13px 0;
+}
+.sidebar-item{
+  border-bottom: 1px solid #413e2b;
+  padding: 1px 8%;
+}
+.sidebar-item:hover{
+  background: #000d0f;
+  border-right: 4px solid #fdf598;
+  letter-spacing: 0.8px;
+  border-bottom: 1px solid #fffcde;
+}
+.online{
+  color: #54f3e6;
+  font-size: 19px;
+}
+.status{
+  font-size: 15px;
+}
+.active{
+  background: #000d0f;
+  border-right: 4px solid #fdf598;
+  border-bottom: 1px solid #fffcde;
+}
+.active h4{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.sidebar-main a{
+  color: white;
+}
+.sidebar-main a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width:1022px){
+  .sidebar{
+    width:0px;
+  }
+}
