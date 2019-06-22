@@ -182,3 +182,17 @@ const filterCategory = () => {
     }
   }
 };
+
+const openViewPostModal = () => {
+  let modal = document.getElementById("post_modal");
+  let close_button = document.getElementById("close_post_modal");
+  modal.style.display = "block";
+  close_button.onclick = () => {
+    modal.style.display = "none";
+  };
+  window.onclick = event => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+};
