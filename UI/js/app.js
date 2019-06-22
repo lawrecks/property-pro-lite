@@ -166,3 +166,33 @@ const markAsSold = id => {
     }
   }
 };
+
+const filterCategory = () => {
+  let input, filter, post_items, text;
+  input = document.getElementById("search_input");
+  filter = input.value.toUpperCase();
+  post_items = document.getElementsByClassName("post-item");
+
+  for (let post_item of post_items) {
+    text = post_item.getElementsByTagName("h3")[0];
+    if (text.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      post_item.style.display = "";
+    } else {
+      post_item.style.display = "none";
+    }
+  }
+};
+
+const openViewPostModal = () => {
+  let modal = document.getElementById("post_modal");
+  let close_button = document.getElementById("close_post_modal");
+  modal.style.display = "block";
+  close_button.onclick = () => {
+    modal.style.display = "none";
+  };
+  window.onclick = event => {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+};
